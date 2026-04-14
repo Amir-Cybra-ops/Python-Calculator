@@ -67,6 +67,13 @@ After launching the application, a graphical window appears where users can:
 - Select mathematical operations
 - Instantly view the calculated result on the display
 
+
+## Screenshot
+
+<p align="center">
+  <img src="screenshots/calculator_gui.png" width="45%">
+  <img src="screenshots/example_calculation.png" width="45%">
+</p>
 ---
 
 ## Running the Program
