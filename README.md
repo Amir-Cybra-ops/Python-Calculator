@@ -3,47 +3,79 @@ Simple python Calculator with a basic GUI
 Project: GUI Calculator
 Author: Omid Shah Amir Sayed
 
-Description
-------------
-This project is a graphical calculator written in Python using the Tkinter library.
+## Description
+This project is a graphical calculator written in Python using the Tkinter library.  
+It provides a user-friendly interface that allows users to perform basic mathematical
+operations such as addition, subtraction, multiplication, and division. Additional
+functions like square root, percentage, and exponentiation are also included.
 
-The program provides a simple interface that allows the user to perform basic
-mathematical operations such as addition, subtraction, multiplication and division.
-Additional functions like square root, percentage, and power are also implemented.
+The application is designed to demonstrate fundamental programming concepts,
+including event-driven development, GUI design, and expression evaluation.
 
-How the Program Works
----------------------
-The program is built using an event-driven structure.
+---
 
-1. The graphical interface (GUI) is created using Tkinter.
-   It contains:
-   - a display field where numbers appear
-   - buttons for numbers and operations
+## Features
+- ➕ Addition
+- ➖ Subtraction
+- ✖️ Multiplication
+- ➗ Division
+- √ Square root
+- % Percentage calculations
+- ^ Exponentiation (power)
+- 🖱️ Button-based input
+- ⌨️ Keyboard input support
+- 🖥️ Standalone executable (.exe) – Python installation not required
 
-2. Each button is connected to the function:
-   
-   button_clicked()
+---
 
-   This function receives the button value and decides what action to perform.
+## Technologies Used
+- **Python 3**
+- **Tkinter** – for the graphical user interface
+- **math** module – for advanced mathematical functions
+- **eval()** – for evaluating mathematical expressions
+- **PyInstaller** – for creating the standalone executable
 
-3. Mathematical calculations are handled using Python functions:
-   - eval() evaluates expressions like "5+3*2"
-   - math.sqrt() calculates square roots
+---
 
-4. The calculator also supports keyboard input through the key_pressed() function.
+## How the Program Works
+The calculator is built using an **event-driven architecture**:
 
-Project Status
---------------
-This calculator is functional but still a work in progress.
-Future improvements could include:
-- improved visual design
-- better button layout
-- additional mathematical functions.
+1. **Graphical User Interface (GUI)**  
+   The interface is created using Tkinter and includes:
+   - A display field where numbers and results are shown
+   - Buttons for digits and mathematical operations
 
-Running the Program
--------------------
-You can run the calculator by double-clicking:
+2. **Button Interaction**  
+   Each button is linked to the `button_clicked()` function, which processes the
+   input and determines the appropriate action.
 
-Calculator.exe
+3. **Mathematical Calculations**
+   - `eval()` is used to evaluate mathematical expressions such as `5 + 3 * 2`.
+   - `math.sqrt()` is used to calculate square roots.
 
-Python is not required for running the executable.
+4. **Keyboard Support**  
+   The calculator also supports keyboard input through the `key_pressed()` function,
+   allowing users to interact with the application without using the mouse.
+
+---
+
+## Example
+
+After launching the application, a graphical window appears where users can:
+
+- Enter numbers using on-screen buttons or the keyboard
+- Select mathematical operations
+- Instantly view the calculated result on the display
+
+---
+
+## Running the Program
+
+### Option 1 – Using the Executable (Recommended)
+You can run the calculator by simply double-clicking:
+
+### Option 2 – Running from Source Code
+If you prefer to run the program from the source code:
+
+```bash
+python calculator.py
